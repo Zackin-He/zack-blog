@@ -1,0 +1,13 @@
+.footer {
+  width: 100%;
+  height: 120px;
+  @apply bg-footerBg;
+  @apply text-primary;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 16px;
+  font-weight: 700;
+}

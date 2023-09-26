@@ -1,0 +1,120 @@
+.markdown {
+  @apply text-primary;
+  font-size: 20px;
+  line-height: 1.6em;
+  user-select: text;
+  word-break: break-all;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    @apply text-primary
+    font-weight: 700;
+  }
+  h5 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  h2:before {
+    content: '✒️';
+  }
+  h3:before {
+    content: '✏️';
+  }
+  h4:before {
+    content: '📌';
+  }
+  h5:before {
+    content: '🏷️';
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  strong {
+    @apply text-hoverColor;
+  }
+  pre {
+    @apply bg-codeBg;
+    code {
+      @apply bg-codeBg;
+      span {
+        @apply bg-codeBg;
+      }
+    }
+  }
+
+  code {
+    @apply bg-inlineCode;
+    font-family: 'dengxian';
+    padding: 3px 8px;
+    border-radius: 8px;
+    margin: 0 2px;
+    @apply text-primary;
+  }
+
+  p img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 12px;
+  }
+
+  blockquote {
+    @apply bg-themeColor1;
+    padding: 14px 40px;
+    font-size: 18px;
+    border-radius: 20px;
+    border: 2px $hoverColor dashed;
+    margin: 0 0 1em;
+    font-style: normal;
+    @apply text-primary;
+  }
+  blockquote p {
+    margin: 0;
+  }
+
+  table {
+    margin: 20px auto;
+    border: 2px solid rgb(120, 120, 120);
+    @apply bg-themeColor1;
+    border-spacing: 0; /*去掉单元格间隙*/
+    text-align: center;
+  }
+  table th,
+  table td {
+    padding: 6px 14px;
+    border: 1px solid rgb(120, 120, 120);
+  }
+
+  a {
+    font-weight: 700;
+    text-decoration: underline !important;
+    margin: 0 4px;
+    @apply text-primary;
+    @extend .trans;
+  }
+  a:hover {
+    color: red;
+  }
+
+  hr {
+    margin: 20px 0;
+  }
+
+}

@@ -1,0 +1,46 @@
+body {
+  font-family: 'dengxian';
+  background-position: center 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  @apply bg-bodyImage;
+  @apply bg-bodyColor;
+  @apply text-primary;
+}
+
+.trans {
+  transition: all 0.3s !important;
+}
+
+.slogan {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: 'Montserrat';
+  h2 {
+    display: inline-block;
+    user-select: none;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+  &:hover h2{
+    filter: blur(20px);
+    opacity: 0;
+    transform: scale(2);
+    transform: scale(3);
+    -webkit-filter: blur(20px);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+    -webkit-filter: blur(10px);
+}
+  @for $i from 1 through 13 {
+    h2:nth-child(#{$i}) {
+      transition-delay: #{$i* 0.05}s;
+    }
+  }
+}

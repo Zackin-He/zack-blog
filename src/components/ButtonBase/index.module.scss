@@ -1,0 +1,23 @@
+.btn {
+  padding: 5px 10px;
+  user-select: none;
+  border-radius: 12px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s !important;
+  @apply bg-themeColor1;
+  text-align: center;
+  display: inline-block;
+  &.dark {
+    @apply bg-themeColor;
+  }
+  &.primary {
+    @apply bg-themeColor1;
+  }
+  &.default {
+    background-color: transparent;
+  }
+  &:hover {
+    @apply bg-hoverColor;
+  }
+}
